@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{max-height: 100%;
+@apply cursor-pointer;
+}
+
+
+input, textarea, select{
+    @apply border border-gray-200 rounded-sm px-2 w-full py-2 shadow-sm mb-2;
+}
+
+input:focus, textarea:focus, select:focus{
+    @apply border-primary shadow-lg;
+}
+
+h1{
+    @apply text-primary mb-4 text-xl;
+}
+
+label{
+    @apply text-primary text-sm;
+}
+
+.btn-primary,.btn-red,.btn-default{
+    @apply text-white px-4 py-1 rounded-sm my-2 mx-1 shadow-md;
+}
+
+.btn-primary{
+    @apply bg-primary;
+}
+
+.btn-primary:hover{
+    @apply bg-bgGray text-primary;
+}
+
+.btn-red{
+    @apply bg-red-900;
+}
+
+.btn-red:hover{
+    @apply bg-bgGray text-red-900;
+}
+
+.btn-default{
+    @apply bg-gray-500;
+}
+
+.btn-default:hover{
+    @apply bg-bgGray text-black;
+}
+
+.btn-white{
+    @apply bg-white p-2 rounded-lg px-4 shadow-lg border;
+}
+
+.btn-white:hover{
+    @apply bg-primary text-white;
+}
+
+table.basic,
+table.border{
+    @apply w-full bg-white rounded-sm shadow-md;
+}
+
+table.basic thead tr td,
+table.border thead tr td,
+table.basic thead tr th,
+table.border thead tr th{
+    @apply text-sm text-gray-600 px-4 py-2 uppercase border-b border-gray-300;
+}
+
+table.basic tr td{
+    @apply   px-4 py-1;
+}
+
+table.border tr td{
+    @apply   px-4 py-3 border-b border-gray-200;
+}
+
+table.basic a{
+    @apply inline-flex gap-1 mr-1 items-center;
+}
+
+.photos{
+   @apply h-24 bg-white p-1 shadow-sm rounded-md border;
+}
+
+.photos:hover{
+    @apply shadow-lg;
+}
+
+.upload-photos{
+   @apply w-24 h-24 bg-bgGray flex justify-center items-center text-primary rounded-md cursor-pointer shadow-sm border;
+}
+
+.upload-photos:hover{
+    @apply text-bgGray bg-primary shadow-lg;
+}
+
